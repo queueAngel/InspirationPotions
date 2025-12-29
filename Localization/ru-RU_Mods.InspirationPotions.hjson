@@ -1,0 +1,25 @@
+Buffs: {
+	InspirationWeakness: {
+		DisplayName: Художественный ступор
+		Description: -{0}% симфонического урона
+	}
+}
+
+Items: {
+	InspirationFlower: {
+		DisplayName: Вдохновляющая Трость
+		Tooltip:
+			'''
+			Увеличивает симфонический урон на 8%.
+			Автоматически выпивает зелья вдохновения.
+			'''
+	}
+
+	LesserInspirationPotion.DisplayName: Малое зелье вдохновения
+	InspirationPotion.DisplayName: Зелье вдохновения
+	GreaterInspirationPotion.DisplayName: Большое зелье вдохновения
+	SuperInspirationPotion.DisplayName: Превосходное зелье вдохновения
+}
+
+PotionTooltip: Восстанавливает {0} вдохновения
+Keybinds.QuickInspiration.DisplayName: Быстрое вдохновение

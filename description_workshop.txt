@@ -1,0 +1,9 @@
+[h1]Inspiration Potions[/h1]
+
+Adds inspiration potions to match vanilla healing and mana potion tiers. Additionally adds the Inspiring Reed (Mana Flower but for inspiration potions) and a keybind for Quick Inspiration.
+
+Requested by Asherian, made by MaxZet, finalized and published by qAngel.
+
+[i]Like this mod? Like this mod![/i]
+
+[img]https://i.imgur.com/ki1CPZe.gif[/img]

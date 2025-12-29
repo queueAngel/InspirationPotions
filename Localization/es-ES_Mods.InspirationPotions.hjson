@@ -1,0 +1,25 @@
+Buffs: {
+	InspirationWeakness: {
+		DisplayName: Bloqueo artístico
+		Description: Daño sinfónico reducido por un {0}%
+	}
+}
+
+Items: {
+	InspirationFlower: {
+		DisplayName: Lengüeta inspiradora
+		Tooltip:
+			'''
+			Aumenta un 8% el daño sinfónico
+			Usa de forma automática pociones de inspiración cuando se necesitan
+			'''
+	}
+
+	LesserInspirationPotion.DisplayName: Poción inspiradora menor
+	InspirationPotion.DisplayName: Poción inspiradora
+	GreaterInspirationPotion.DisplayName: Poción inspiradora mayor
+	SuperInspirationPotion.DisplayName: Poción superinspiradora
+}
+
+PotionTooltip: Restaura {0} de inspiración
+Keybinds.QuickInspiration.DisplayName: Inspiración rápida
