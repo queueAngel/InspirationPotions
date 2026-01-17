@@ -19,7 +19,56 @@ Items: {
 	InspirationPotion.DisplayName: Poción inspiradora
 	GreaterInspirationPotion.DisplayName: Poción inspiradora mayor
 	SuperInspirationPotion.DisplayName: Poción superinspiradora
+	SupremeInspirationPotion.DisplayName: Poción inspiradora suprema
+	DecorativeGreaterInspirationPotion.DisplayName: "{$GreaterInspirationPotion.DisplayName} decorativa"
+	DecorativeInspirationPotion.DisplayName: "{$InspirationPotion.DisplayName} decorativa"
+	DecorativeLesserInspirationPotion.DisplayName: "{$LesserInspirationPotion.DisplayName} decorativa"
+	DecorativeSuperInspirationPotion.DisplayName: "{$SuperInspirationPotion.DisplayName} decorativa"
+	DecorativeSupremeInspirationPotion.DisplayName: "{$SupremeInspirationPotion.DisplayName} decorativa"
 }
 
 PotionTooltip: Restaura {0} de inspiración
 Keybinds.QuickInspiration.DisplayName: Inspiración rápida
+
+Configs: {
+	InspirationPotionsConfig: {
+		DisplayName: Opciones compartidas
+
+		CrateDrops: {
+			Label: Cajas de pesca
+			Tooltip: Controla la influencia del mod sobre las cajas de pesca
+		}
+	}
+
+	InspirationPotionsClientConfig: {
+		DisplayName: Opciones de usuario
+
+		DungeonBottles: {
+			Label: Botellas en la mazmorra
+			Tooltip: Si deberían aparecer pociones inspiradoras en forma de bloques en la mazmorra mientras se genera el mundo
+		}
+	}
+
+	CrateLoot: {
+		Tooltip: Estilos de botín para las cajas de pesca
+
+		Mixed: {
+			Label: Mezcladas
+			Tooltip:
+				'''
+				Las pociones inspiradoras son añadidas como una tercera posibilidad con peso igual al obtener pociones curativas o de maná de las cajas
+				Técnicamente reduce la probabilidad de obtener otros objetos ya que se añade entre ellos
+				'''
+		}
+
+		Separate: {
+			Label: Separadas
+			Tooltip: Las pociones inspiradoras tienen una probabilidad separada (1/8) de ser obtenidas de las cajas, manteniendo igual los demás objetos
+		}
+
+		None: {
+			Label: No añadir
+			Tooltip: Las pociones inspiradoras nunca se obtienen de las cajas
+		}
+	}
+}

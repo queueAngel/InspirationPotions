@@ -1,10 +1,8 @@
-﻿using InspirationPotions.Content.Buffs;
-using Terraria;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.Audio;
-using ThoriumMod.Utilities;
 using Terraria.Localization;
+using InspirationPotions.Content.Tiles;
 
 namespace InspirationPotions.Content.Items;
 
@@ -12,6 +10,10 @@ public abstract class InspirationPotionBase : ModItem
 {
     private LocalizedText _tooltip;
     public sealed override LocalizedText Tooltip => _tooltip;
+    public override void Load()
+    {
+        Mod.AddContent(new DecorativePotionItem(this));
+    }
     public override void SetStaticDefaults()
     {
         _tooltip = Mod.GetLocalization("PotionTooltip").WithFormatArgs(RecoverInspiration);
@@ -33,4 +35,38 @@ public abstract class InspirationPotionBase : ModItem
         return true;
     }
     public abstract int RecoverInspiration { get; }
+}
+
+[Autoload(false)]
+public sealed class DecorativePotionItem : ModItem
+{
+    public DecorativePotionItem() { }
+    public DecorativePotionItem(InspirationPotionBase parent) => _parent = parent;
+    private readonly InspirationPotionBase _parent;
+    public InspirationPotionBase Parent => _parent ?? ((DecorativePotionItem)ItemLoader.GetItem(Type))._parent;
+    public override string Name => "Decorative" + Parent.Name;
+    public override LocalizedText Tooltip => LocalizedText.Empty;
+    public override void SetDefaults()
+    {
+        Item.DefaultToPlaceableTile(ModContent.TileType<InspirationBottle>(), Parent switch
+        {
+            LesserInspirationPotion => 0,
+            InspirationPotion => 1,
+            GreaterInspirationPotion => 2,
+            SuperInspirationPotion => 3,
+            SupremeInspirationPotion => 4,
+            _ => throw new System.Exception("You shouldn't be seeing this. Please report to the developer of Inspiration Potions")
+        });
+        Item.SetShopValues(ItemRarityID.White, Item.sellPrice(silver: 1));
+
+        Item.maxStack = Item.CommonMaxStack;
+        Item.width = Item.height = 20;
+    }
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(Parent)
+            .AddTile(TileID.HeavyWorkBench)
+            .Register();
+    }
 }

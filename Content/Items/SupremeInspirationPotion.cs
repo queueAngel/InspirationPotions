@@ -1,15 +1,15 @@
-using Terraria;
+﻿using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ThoriumMod.Items.Thorium;
 
 namespace InspirationPotions.Content.Items;
 
-public sealed class SuperInspirationPotion : InspirationPotionBase
+public sealed class SupremeInspirationPotion : InspirationPotionBase
 {
-    public override int RecoverInspiration => 50;
+    public override int RecoverInspiration => 60;
     public static short PotionType;
+    public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
     public override void OnCreated(ItemCreationContext context)
     {
         if (context is not InitializationItemCreationContext) return;
@@ -24,10 +24,8 @@ public sealed class SuperInspirationPotion : InspirationPotionBase
     public override void AddRecipes()
     {
         CreateRecipe(15)
-            .AddIngredient<GreaterInspirationPotion>(15)
-            .AddIngredient<ThoriumOre>(2)
-            .AddIngredient(ItemID.FallenStar, 2)
-            .AddIngredient(ItemID.CrystalShard, 2)
+            .AddIngredient<SuperInspirationPotion>(15)
+            .AddIngredient(ModLoader.GetMod("CalamityMod"), "Necroplasm")
             .AddTile(TileID.Bottles)
             .Register();
     }

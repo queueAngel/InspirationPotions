@@ -1,9 +1,33 @@
+[url=https://discord.gg/4PDwPnz9Jm]Discord Server[/url] | [url=https://github.com/queueAngel/InspirationPotions]GitHub (Source Code)[/url]
+
 [h1]Inspiration Potions[/h1]
 
-Adds inspiration potions to match vanilla healing and mana potion tiers. Additionally adds the Inspiring Reed (Mana Flower but for inspiration potions) and a keybind for Quick Inspiration.
+Adds inspiration potions to match vanilla healing and mana potion tiers.
 
-Requested by Asherian, made by MaxZet, finalized and published by qAngel.
+[h2]Features[/h2]
+
+• Adds the Lesser Inspiration Potion, Inspiration Potion, Greater Inspiration Potion, and Super Inspiration Potion. If Calamity is installed, the Supreme Inspiration Potion will also be added (each is available as a decorative potion, crafted like other decorative potions) 
+
+• Adds the Inspiring Reed, a Mana Flower equivalent for inspiration potions 
+
+• Adds a keybind for Quick Inspiration, configurable in Controls 
+
+• Adds the ability to receive inspiration potions from fishing crates and for them to generate in the Dungeon as placed bottles (both configurable in Mod Configuration)
+
+• Adds inspiration potions to Big Mimic loot pools
+
+[h2]Credits[/h2]
+
+Requested by Asherian
+Original version by MaxZet
+Published and expanded by qAngel
+Original placed potion sprites by stormytuna
 
 [i]Like this mod? Like this mod![/i]
 
 [img]https://i.imgur.com/ki1CPZe.gif[/img]
+
+[hr][/hr]
+[b]Notes[/b]
+
+This mod is open source and released under the AGPL-3.0 license.

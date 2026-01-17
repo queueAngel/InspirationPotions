@@ -1,3 +1,11 @@
-Adds inspiration potions to match vanilla healing and mana potion tiers. Additionally adds the Inspiring Reed (Mana Flower but for inspiration potions) and a keybind for Quick Inspiration.
+- Adds the Lesser Inspiration Potion, Inspiration Potion, Greater Inspiration Potion, and Super Inspiration Potion. If Calamity is installed, the Supreme Inspiration Potion will also be added (each is available as a decorative potion, crafted like other decorative potions)
 
-Requested by Asherian, made by MaxZet, finalized and published by qAngel.
+- Adds the Inspiring Reed, a Mana Flower equivalent for inspiration potions
+
+- Adds a keybind for Quick Inspiration, configurable in Controls
+
+- Adds the ability to receive inspiration potions from fishing crates and for them to generate in the Dungeon as placed bottles (both configurable in Mod Configuration)
+
+- Adds inspiration potions to Big Mimic loot pools
+
+Requested by Asherian, made by MaxZet, finalized and published by qAngel, original placed bottle sprites by stormytuna.
